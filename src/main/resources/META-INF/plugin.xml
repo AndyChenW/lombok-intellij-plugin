@@ -124,6 +124,7 @@
     <processor implementation="de.plushnikov.intellij.plugin.processor.clazz.log.Slf4jProcessor"/>
     <processor implementation="de.plushnikov.intellij.plugin.processor.clazz.log.XSlf4jProcessor"/>
     <processor implementation="de.plushnikov.intellij.plugin.processor.clazz.log.CommonsLogProcessor"/>
+    <processor implementation="de.plushnikov.intellij.plugin.processor.clazz.log.ELogProcessor"/>
 
     <processor implementation="de.plushnikov.intellij.plugin.processor.clazz.DataProcessor"/>
     <processor implementation="de.plushnikov.intellij.plugin.processor.clazz.EqualsAndHashCodeProcessor"/>
