@@ -32,14 +32,7 @@ allprojects {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 
-    if (!Boolean.valueOf(System.getenv('CI'))) {
-        def javaHome = System.getenv("JAVA_HOME")
-        if (null == javaHome || "".equals(javaHome)) {
-            javaHome = JDK6_HOME
-        }
-
-        options.bootClasspath = "$javaHome/jre/lib/rt.jar"
-    }
+  
 }
 
 sourceSets {
@@ -115,7 +108,7 @@ dependencies {
     bnf files("$buildDir/tools/light-psi-all.jar")
     jflex files("$buildDir/tools/JFlex.jar")
 
-    compile (project(':patcher'))  {
+    compile(project(':patcher')) {
         exclude group: 'org.javassist'
     }
 
